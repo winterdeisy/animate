@@ -6,25 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            background-color: black;
+        .scene {
+            /* 배경이미지 */
+            text-align: center;
+            height: 100vh;
+            background-size: cover;
+            background-position: center center;
+            color: rgba(255, 255, 255, 0.5);   
+            background-attachment: fixed;
+            margin: 0;
         }
-        .img {
-            width: 100%;
-            animation-duration: 3s;
-            animation-name: slide;
-            animation-iteration-count: infinite;
+        .scene p,h1 {
+            margin: 0;
+            padding-top: 20%;
         }
-        @keyframes slide {
+        .scene h1 {
+            font-weight: 100;
+        }
+        .scene h1:hover {
+            color: white;
+        }
+        .scene.one {
+            background-image: url(river.jpg);
+            
+            /* 애니메이션 */
+            animation-duration: 3c;
+            animation-name: slide1;
+        }
+        .scene.two {
+            background-image: url(night-sky.jpg);
+
+            /* 애니메이션 */
+            animation-duration: 3c;
+            animation-name: slide2;
+        }
+        @keyframes slide1{
             from {
-                margin-left: 25%;
+                margin-left: 100%;
             }
         }
     </style>
 </head>
 
 <body>
-    <img class="img one" src = "river.jpg">
-    <img class="img two" src = "night-sky.jpg">
+    <div class="scene one">
+        <p>
+        <h1>Additionally,</h1> 
+        new modes of production, such as Facebook and Instagram, have emerged wherein what is produced is a structure that channels the imaginative talent of the user of that structure such that they create its, again immaterial, content.
+    </p>
+    </div>
+    <div class="scene two">
+        <p>
+        <h1>Support</h1> 
+        for youth mentoring as an intervention has been provided by rigorous evaluations demonstrating improvements in your competencies and reductions in problem behaviors and by meta-analytic results substantiating the general effectiveness of mentoring across a range of programs and studies
+    </p>
+    </div>
 </body>
 </html>
